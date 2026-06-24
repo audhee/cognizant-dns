@@ -17,7 +17,6 @@ public class Operations {
             return;
         }
         Product p = inventory.get(productId);
-        p.setproductId(productId);
         p.setprice(price);
         p.setquantity(quantity);
         p.setproductName(productName);
