@@ -28,6 +28,7 @@ public class App {
         System.out.println("Linear Search result >>> "+findLinearSearch);
 
         boolean findBinarySearch = search.binarySearch(products, "keyboard");
+        // Binary search >> will take O(log n)
         System.out.println("Binary Search results >>> "+findBinarySearch);
     }
 }
