@@ -1,7 +1,7 @@
 
-# Week 1 - Cognizant Digital Nurture 4.0
+# Week 1 - Cognizant Digital Nurture 5.0
 
-This folder contains the solutions for the Week 1 exercises from the Cognizant Digital Nurture 4.0 Java Full Stack Engineer program.
+This folder contains the solutions for the Week 1 exercises from the Cognizant Digital Nurture 4.0 Java Full Stack Engineer program
 
 The focus of this week is to strengthen Java fundamentals by implementing basic programming concepts, PL/SQL programs, JUnit testing, and introductory design patterns.
 
