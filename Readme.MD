@@ -15,5 +15,27 @@ Technologies Used
 - IntelliJ IDEA
 - VS Code
 
-
 *This repository will be updated as I progress through the remaining weeks of the program.*
+
+
+
+# Week 2 - Cognizant Digital Nurture 5.0
+
+This folder contains the solutions for the **Week 2** exercises from the **Cognizant Digital Nurture 5.0 - Java Full Stack Engineer** program.
+
+The focus of this week is to build a strong foundation in the **Spring Framework** and **Spring Boot** by implementing Inversion of Control (IoC), Dependency Injection (DI), Maven project configuration, Spring Bean management, and developing basic RESTful applications using Spring Boot and Spring Data JPA.
+
+## Technologies Used
+
+* Java
+* Spring Core
+* Spring Boot
+* Spring IoC
+* Dependency Injection (Constructor & Setter)
+* Spring Data JPA
+* Spring Web
+* H2 Database
+* Maven
+* IntelliJ IDEA
+
+*This repository will be updated as I progress through the remaining weeks of the Cognizant Digital Nurture 5.0 program.*
