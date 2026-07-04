@@ -13,39 +13,51 @@ import java.util.List;
 public class CountryService {
 
     @Autowired
-    CountryRepository repository;
+    private CountryRepository repository;
 
+    // Get all countries
     @Transactional(readOnly = true)
-    public List<Country> getAllCountries(){
+    public List<Country> getAllCountries() {
         return repository.findAll();
     }
 
+    // Find country by code
     @Transactional(readOnly = true)
     public Country findCountryByCode(String code)
-            throws CountryNotFoundException{
+            throws CountryNotFoundException {
 
         return repository.findById(code)
                 .orElseThrow(() ->
                         new CountryNotFoundException("Country Not Found"));
     }
 
+    // Add country
     @Transactional
-    public Country addCountry(Country country){
-        return repository.save(country);
+    public void addCountry(Country country) {
+        repository.save(country);
     }
 
+    // Update country
     @Transactional
-    public Country updateCountry(Country country){
-        return repository.save(country);
+    public void updateCountry(String code, String name)
+            throws CountryNotFoundException {
+
+        Country country = findCountryByCode(code);
+
+        country.setName(name);
+
+        repository.save(country);
     }
 
+    // Delete country
     @Transactional
-    public void deleteCountry(String code){
+    public void deleteCountry(String code) {
         repository.deleteById(code);
     }
 
+    // Search by partial name
     @Transactional(readOnly = true)
-    public List<Country> searchCountry(String name){
+    public List<Country> searchCountry(String name) {
         return repository.findByNameContainingIgnoreCase(name);
     }
 

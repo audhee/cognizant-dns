@@ -1,5 +1,6 @@
 package com.cognizant.orm_learn;
 
+import com.cognizant.orm_learn.exception.CountryNotFoundException;
 import com.cognizant.orm_learn.model.Country;
 import com.cognizant.orm_learn.service.CountryService;
 import org.springframework.boot.SpringApplication;
@@ -18,58 +19,86 @@ public class OrmLearnApplication {
 
 		service = context.getBean(CountryService.class);
 
+		// Hands-on 1
 		getAllCountries();
 
+		// Hands-on 6
 		findCountry();
 
-		addCountry();
+		// Hands-on 7
+		testAddCountry();
 
-		updateCountry();
+		// Hands-on 8
+		testUpdateCountry();
 
-		deleteCountry();
-
-		searchCountry();
+		// Hands-on 9
+		testDeleteCountry();
 
 	}
 
-	static void getAllCountries() {
+	// Hands-on 1
+	private static void getAllCountries() {
 
+		System.out.println("===== GET ALL COUNTRIES =====");
 		System.out.println(service.getAllCountries());
-
 	}
 
-	static void findCountry(){
+	// Hands-on 6
+	private static void findCountry() {
 
-		try{
-			System.out.println(service.findCountryByCode("IN"));
-		}
-		catch(Exception e){
+		System.out.println("===== FIND COUNTRY =====");
+
+		try {
+			Country country = service.findCountryByCode("IN");
+			System.out.println(country);
+		} catch (CountryNotFoundException e) {
 			System.out.println(e.getMessage());
 		}
+	}
+
+	// Hands-on 7
+	private static void testAddCountry() {
+
+		System.out.println("===== ADD COUNTRY =====");
+
+		Country country = new Country("JP", "Japan");
+
+		service.addCountry(country);
+
+		try {
+			System.out.println(service.findCountryByCode("JP"));
+		} catch (CountryNotFoundException e) {
+			System.out.println(e.getMessage());
+		}
+	}
+
+	// Hands-on 8
+	private static void testUpdateCountry() {
+
+		System.out.println("===== UPDATE COUNTRY =====");
+
+		try {
+
+			service.updateCountry("IN", "Bharat");
+
+			System.out.println(service.findCountryByCode("IN"));
+
+		} catch (CountryNotFoundException e) {
+
+			System.out.println(e.getMessage());
+
+		}
 
 	}
 
-	static void addCountry(){
+	// Hands-on 9
+	private static void testDeleteCountry() {
 
-		service.addCountry(new Country("JP","Japan"));
-
-	}
-
-	static void updateCountry(){
-
-		service.updateCountry(new Country("IN","India"));
-
-	}
-
-	static void deleteCountry(){
+		System.out.println("===== DELETE COUNTRY =====");
 
 		service.deleteCountry("JP");
 
-	}
-
-	static void searchCountry(){
-
-		System.out.println(service.searchCountry("Ind"));
+		System.out.println("Country Deleted Successfully");
 
 	}
 
