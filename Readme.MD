@@ -38,4 +38,44 @@ The focus of this week is to build a strong foundation in the **Spring Framework
 * Maven
 * IntelliJ IDEA
 
+# Week 3 - Cognizant Digital Nurture 5.0
+
+This folder contains the solutions for the **Week 3** exercises from the **Cognizant Digital Nurture 5.0 - Java Full Stack Engineer** program.
+
+The focus of this week is to strengthen frontend development skills using **React** by building interactive and reusable user interfaces. It also covers modern JavaScript (ES6+), React components, props, state management, event handling, hooks, routing, forms, and consuming REST APIs.
+
+## Technologies Used
+
+* JavaScript (ES6+)
+* React.js
+* JSX
+* React Hooks
+* React Router
+* HTML5
+* CSS3
+* REST API Integration
+* npm
+* Git & GitHub
+* VS Code
+
+# Week 4 - Cognizant Digital Nurture 5.0
+
+This folder contains the solutions for the **Week 4** exercises from the **Cognizant Digital Nurture 5.0 - Java Full Stack Engineer** program.
+
+The focus of this week is to develop full-stack application skills by integrating **Spring Boot** with relational databases, implementing RESTful APIs, performing CRUD operations using Spring Data JPA, handling exceptions, validating user input, and understanding version control and containerization using Git and Docker.
+
+## Technologies Used
+
+* Java
+* Spring Boot
+* Spring MVC
+* Spring Data JPA
+* Hibernate
+* MySQL
+* RESTful Web Services
+* Maven
+* Git & GitHub
+* Docker
+* IntelliJ IDEA
+
 *This repository will be updated as I progress through the remaining weeks of the Cognizant Digital Nurture 5.0 program.*
