@@ -1,81 +1,269 @@
-# Week 1 - Cognizant Digital Nurture 5.0
+# 🚀 Cognizant Digital Nurture 5.0 – Java Full Stack 
 
-This folder contains the solutions for the Week 1 exercises from the Cognizant Digital Nurture 5.0 Java Full Stack Engineer program
+Welcome to my **Cognizant Digital Nurture 5.0** learning repository.
 
-The focus of this week is to strengthen Java fundamentals by implementing basic programming concepts, PL/SQL programs, JUnit testing, introductory design patterns, Mockito and test Driven Devlopment and logging framework.
+This repository contains my hands-on labs, assignments, coding exercises, and practice solutions completed during the **Java Full Stack Engineer** learning program. The repository is organized week-wise according to the official curriculum and will continue to grow as I progress through the program.
 
-Technologies Used
+---
+
+## 📚 Curriculum Breakdown
+
+### 🟢 Week 1 – Engineering Concepts
+
+Focused on strengthening programming fundamentals and software engineering concepts.
+
+#### Topics Covered
+
+- Design Patterns
+  - SOLID Principles
+  - Creational Patterns
+  - Structural Patterns
+  - Behavioral Patterns
+- Data Structures & Algorithms (Java)
+- PL/SQL Programming
+- Test Driven Development (TDD)
+- Logging Frameworks
+  - SLF4J
+  - Lombok
+
+#### Technologies Used
 
 - Java
 - Maven
-- JUnit 4
 - PL/SQL
+- JUnit
 - Mockito
-- Logging
+- SLF4J
+- Lombok
 - IntelliJ IDEA
 - VS Code
 
-*This repository will be updated as I progress through the remaining weeks of the program.*
+---
 
+### 🔵 Week 2 – Spring Core & Persistence
 
+Focused on understanding the Spring Framework and backend application development.
 
-# Week 2 - Cognizant Digital Nurture 5.0
+#### Topics Covered
 
-This folder contains the solutions for the **Week 2** exercises from the **Cognizant Digital Nurture 5.0 - Java Full Stack Engineer** program.
+- Spring Core
+- Dependency Injection (DI)
+- Inversion of Control (IoC)
+- Maven
+- Spring Data JPA
+- Hibernate ORM
+- Bean Lifecycle
+- Annotation-based Configuration
 
-The focus of this week is to build a strong foundation in the **Spring Framework** and **Spring Boot** by implementing Inversion of Control (IoC), Dependency Injection (DI), Maven project configuration, Spring Bean management, and developing basic RESTful applications using Spring Boot and Spring Data JPA.
+#### Technologies Used
 
-## Technologies Used
+- Java
+- Spring Core
+- Spring Data JPA
+- Hibernate
+- Maven
+- IntelliJ IDEA
 
-* Java
-* Spring Core
-* Spring Boot
-* Spring IoC
-* Dependency Injection (Constructor & Setter)
-* Spring Data JPA
-* Spring Web
-* H2 Database
-* Maven
-* IntelliJ IDEA
+---
 
-# Week 3 - Cognizant Digital Nurture 5.0
+### 🔵 Week 3 – Spring Boot & REST APIs
 
-This folder contains the solutions for the **Week 3** exercises from the **Cognizant Digital Nurture 5.0 - Java Full Stack Engineer** program.
+Focused on building production-ready RESTful applications using Spring Boot.
 
-The focus of this week is to strengthen frontend development skills using **React** by building interactive and reusable user interfaces. It also covers modern JavaScript (ES6+), React components, props, state management, event handling, hooks, routing, forms, and consuming REST APIs.
+#### Topics Covered
 
-## Technologies Used
+- Spring Boot 3
+- RESTful Web Services
+- Spring MVC
+- API Documentation
+- Spring Boot Actuator
+- Spring Security (Introduction)
+- Exception Handling
+- Validation
 
-* JavaScript (ES6+)
-* React.js
-* JSX
-* React Hooks
-* React Router
-* HTML5
-* CSS3
-* REST API Integration
-* npm
-* Git & GitHub
-* VS Code
+#### Technologies Used
 
-# Week 4 - Cognizant Digital Nurture 5.0
+- Java
+- Spring Boot
+- Spring MVC
+- REST APIs
+- Spring Security
+- Maven
+- IntelliJ IDEA
 
-This folder contains the solutions for the **Week 4** exercises from the **Cognizant Digital Nurture 5.0 - Java Full Stack Engineer** program.
+---
 
-The focus of this week is to develop full-stack application skills by integrating **Spring Boot** with relational databases, implementing RESTful APIs, performing CRUD operations using Spring Data JPA, handling exceptions, validating user input, and understanding version control and containerization using Git and Docker.
+### 🟣 Week 4 – Microservices & Code Quality
 
-## Technologies Used
+Focused on scalable backend architecture and software quality.
 
-* Java
-* Spring Boot
-* Spring MVC
-* Spring Data JPA
-* Hibernate
-* MySQL
-* RESTful Web Services
-* Maven
-* Git & GitHub
-* Docker
-* IntelliJ IDEA
+#### Topics Covered
 
-*This repository will be updated as I progress through the remaining weeks of the Cognizant Digital Nurture 5.0 program.*
+- Microservices Architecture
+- Spring Cloud
+- Eureka Server
+- API Gateway
+- Resiliency Patterns
+- SonarQube
+- Code Quality Analysis
+
+#### Technologies Used
+
+- Spring Boot
+- Spring Cloud
+- Eureka
+- API Gateway
+- SonarQube
+- Maven
+
+---
+
+### 🟠 Week 5 – React Fundamentals
+
+Focused on building interactive user interfaces using React.
+
+#### Topics Covered
+
+- React Fundamentals
+- JSX
+- Components
+- Props
+- State
+- Event Handling
+- Conditional Rendering
+- Lists & Keys
+
+#### Technologies Used
+
+- React.js
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- npm
+- VS Code
+
+---
+
+### 🟠 Week 6 – Advanced React, Git & CI/CD
+
+Focused on frontend integration, version control, and development workflows.
+
+#### Topics Covered
+
+- React Forms
+- Controlled Components
+- Fetch API
+- Axios
+- API Integration
+- Debugging React Applications
+- Git Fundamentals
+- Git Workflows
+- GitHub
+- CI/CD Basics
+
+#### Technologies Used
+
+- React.js
+- Axios
+- Fetch API
+- Git
+- GitHub
+- npm
+- VS Code
+
+---
+
+# 💻 Tech Stack
+
+### Programming Languages
+
+- Java
+- JavaScript (ES6+)
+- SQL (PL/SQL)
+
+### Backend
+
+- Spring Core
+- Spring Boot
+- Spring MVC
+- Spring Data JPA
+- Hibernate
+- Spring Cloud
+- REST APIs
+
+### Frontend
+
+- React.js
+- JSX
+- HTML5
+- CSS3
+
+### Databases
+
+- H2 Database
+- MySQL
+
+### Testing & Quality
+
+- JUnit
+- Mockito
+- SonarQube
+- SLF4J
+- Lombok
+
+### DevOps & Tools
+
+- Git
+- GitHub
+- Maven
+- IntelliJ IDEA
+- VS Code
+
+---
+
+## 📂 Repository Structure
+
+```
+Cognizant-DNS/
+│
+├── Week-1/
+├── Week-2/
+├── Week-3/
+├── Week-4/
+├── Week-5/
+├── Week-6/
+└── README.md
+```
+
+---
+
+## 🎯 Repository Purpose
+
+This repository serves as a record of my learning journey throughout the **Cognizant Digital Nurture 5.0 – Java Full Stack Engineer** program. It includes:
+
+- ✅ Hands-on Labs
+- ✅ Practice Programs
+- ✅ Coding Exercises
+- ✅ Assignments
+- ✅ Spring Boot Projects
+- ✅ React Applications
+- ✅ Git Workflows
+
+---
+
+## 🚀 Progress
+
+| Week   | Status       |
+| ------ | ------------ |
+| Week 1 | ✅ Completed |
+| Week 2 | ✅ Completed |
+| Week 3 | ✅ Completed |
+| Week 4 | ✅ Completed |
+| Week 5 | ✅ Completed |
+| Week 6 | ✅ Completed |
+
+---
+
+## ⭐ Future Updates
+
+This repository will continue to be updated as I complete additional weeks of the **Cognizant Digital Nurture 5.0** program, including new assignments, projects, and hands-on exercises.
