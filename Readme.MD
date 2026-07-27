@@ -266,4 +266,4 @@ This repository serves as a record of my learning journey throughout the **Cogni
 
 ## ⭐ Future Updates
 
-This repository will continue to be updated as I complete additional weeks of the **Cognizant Digital Nurture 5.0** program, including new assignments, projects.
+This repository will continue to be updated as I complete additional weeks of the **Cognizant Digital Nurture 5.0** program, including new assignments, projects and topics.
