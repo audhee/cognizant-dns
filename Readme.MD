@@ -173,12 +173,48 @@ Focused on frontend integration, version control, and development workflows.
 
 ---
 
+### 🔴 Week 7 – Angular (v20.0), NgRx & Testing
+
+Focused on building a comprehensive Student Course Portal single-page application using modern standalone Angular, RxJS, NgRx state management, dynamic forms, and unit testing.
+
+#### Topics Covered
+
+- Environment Setup, Angular CLI & Project Structure
+- Component Architecture, Property Binding, Event Binding & Two-Way Binding
+- Lifecycle Hooks (`ngOnInit`, `ngOnChanges`, `ngOnDestroy`)
+- Component Communication (`@Input`, `@Output`, `EventEmitter`)
+- Structural & Attribute Directives (`*ngIf`, `*ngFor`, `*ngSwitch`, `[ngClass]`, `[ngStyle]`)
+- Custom Directive (`appHighlight`) & Custom Pipe (`creditLabel`)
+- Template-Driven Forms & Validation
+- Reactive Forms, `FormBuilder`, `FormArray` & Custom Validators (Sync/Async)
+- Services & Dependency Injection Hierarchy
+- Routing, Route Parameters, Query Parameters & Lazy Loaded Modules
+- Route Guards (`CanActivate`, `CanDeactivate`)
+- HttpClient API Integration, RxJS Operators (`map`, `catchError`, `tap`, `retry`, `switchMap`)
+- HTTP Interceptors (Auth, Error Handling, Global Loading Spinner)
+- NgRx State Management (Actions, Reducers, Effects, Memoised Selectors, DevTools)
+- Unit Testing with Jasmine, Karma & TestBed (`CourseCardComponent`, `CourseService`)
+
+#### Technologies Used
+
+- Angular (v20.0)
+- TypeScript
+- RxJS
+- NgRx (Store, Effects, Entity, DevTools)
+- Jasmine & Karma
+- JSON Server
+- HTML5 & CSS3
+- npm
+- VS Code
+
+---
+
 # 💻 Tech Stack
 
 ### Programming Languages
 
 - Java
-- JavaScript (ES6+)
+- TypeScript / JavaScript (ES6+)
 - SQL (PL/SQL)
 
 ### Backend
@@ -193,6 +229,8 @@ Focused on frontend integration, version control, and development workflows.
 
 ### Frontend
 
+- Angular (v20.0)
+- NgRx / RxJS
 - React.js
 - JSX
 - HTML5
@@ -205,6 +243,7 @@ Focused on frontend integration, version control, and development workflows.
 
 ### Testing & Quality
 
+- Jasmine & Karma
 - JUnit
 - Mockito
 - SonarQube
@@ -232,6 +271,7 @@ Cognizant-DNS/
 ├── Week-4/
 ├── Week-5/
 ├── Week-6/
+├── Week7/
 └── README.md
 ```
 
@@ -246,7 +286,7 @@ This repository serves as a record of my learning journey throughout the **Cogni
 - ✅ Coding Exercises
 - ✅ Assignments
 - ✅ Spring Boot Projects
-- ✅ React Applications
+- ✅ React & Angular Applications
 - ✅ Git Workflows
 
 ---
@@ -261,9 +301,11 @@ This repository serves as a record of my learning journey throughout the **Cogni
 | Week 4 | ✅ Completed |
 | Week 5 | ✅ Completed |
 | Week 6 | ✅ Completed |
+| Week 7 | ✅ Completed |
 
 ---
 
 ## ⭐ Future Updates
 
 This repository will continue to be updated as I complete additional weeks of the **Cognizant Digital Nurture 5.0** program, including new assignments, projects and topics.
+
