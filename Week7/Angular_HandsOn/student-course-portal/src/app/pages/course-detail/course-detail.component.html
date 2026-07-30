@@ -1,0 +1,32 @@
+<div class="detail-container">
+  <a routerLink="/courses" class="back-link">&larr; Back to Courses</a>
+
+  <div *ngIf="course" class="course-card-detail">
+    <h2>{{ course.name }} ({{ course.code }})</h2>
+    <div class="meta-row">
+      <span class="badge">Credits: {{ course.credits }}</span>
+      <span class="badge">Status: {{ course.gradeStatus }}</span>
+    </div>
+
+    <div class="description-block">
+      <h3>Course Details & Syllabus</h3>
+      <p>This comprehensive module covers key theoretical principles and hands-on exercises for {{ course.name }}.</p>
+    </div>
+
+    <div class="students-block">
+      <h3>Enrolled Students (switchMap HTTP query)</h3>
+      <ul *ngIf="enrolledStudents.length > 0; else noStudents">
+        <li *ngFor="let s of enrolledStudents">
+          <strong>{{ s.name }}</strong> ({{ s.email }})
+        </li>
+      </ul>
+      <ng-template #noStudents>
+        <p>No students enrolled yet.</p>
+      </ng-template>
+    </div>
+  </div>
+
+  <div *ngIf="errorMessage" class="error-box">
+    <p>{{ errorMessage }}</p>
+  </div>
+</div>

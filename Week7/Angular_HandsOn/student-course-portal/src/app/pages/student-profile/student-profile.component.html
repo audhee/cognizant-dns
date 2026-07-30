@@ -1,0 +1,31 @@
+<div class="profile-container">
+  <app-notification></app-notification>
+
+  <h2>Student Profile</h2>
+
+  <div class="profile-card">
+    <div class="profile-header">
+      <div class="avatar">{{ student.name.charAt(0) }}</div>
+      <div>
+        <h3>{{ student.name }}</h3>
+        <p>{{ student.email }}</p>
+      </div>
+    </div>
+    <div class="profile-stats">
+      <p><strong>Student ID:</strong> {{ student.id }}</p>
+      <p><strong>GPA:</strong> {{ student.gpa }}</p>
+    </div>
+  </div>
+
+  <div class="enrolled-section">
+    <h3>Enrolled Courses</h3>
+    <ul *ngIf="enrolledCourses.length > 0; else noEnrolled" class="course-list-simple">
+      <li *ngFor="let c of enrolledCourses">
+        <strong>{{ c.name }}</strong> ({{ c.code }}) &mdash; {{ c.credits }} Credits
+      </li>
+    </ul>
+    <ng-template #noEnrolled>
+      <p>No courses currently enrolled.</p>
+    </ng-template>
+  </div>
+</div>

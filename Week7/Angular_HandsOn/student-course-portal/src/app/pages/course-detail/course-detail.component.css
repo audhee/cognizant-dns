@@ -1,0 +1,51 @@
+.detail-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: #0284c7;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.course-card-detail {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.meta-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.badge {
+  background: #f1f5f9;
+  color: #334155;
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.description-block {
+  margin-bottom: 2rem;
+}
+
+.students-block {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 1.5rem;
+}
+
+.error-box {
+  background: #fee2e2;
+  color: #991b1b;
+  padding: 1rem;
+  border-radius: 6px;
+}

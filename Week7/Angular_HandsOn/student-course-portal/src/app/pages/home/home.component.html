@@ -1,0 +1,45 @@
+<div class="home-container">
+  <section class="hero-section">
+    <h1>Welcome to {{ portalName }}</h1>
+    <p class="description">
+      Manage your enrolled courses, view academic grades, search available subjects, and request new enrollments effortlessly.
+    </p>
+
+    <div class="action-bar">
+      <button class="btn btn-primary" [disabled]="!isPortalActive" (click)="onEnrollClick()">
+        Enroll Now
+      </button>
+      <span *ngIf="message" class="enroll-msg">{{ message }}</span>
+    </div>
+  </section>
+
+  <section class="search-section">
+    <h3>Search Portal Courses</h3>
+    <input
+      type="text"
+      class="search-input"
+      [(ngModel)]="searchTerm"
+      placeholder="Type to search..."
+    />
+    <p *ngIf="searchTerm" class="search-live">Searching for: {{ searchTerm }}</p>
+  </section>
+
+  <section class="stats-grid">
+    <div class="stat-card">
+      <span class="stat-number">{{ coursesAvailableCount }}</span>
+      <span class="stat-label">Courses Available</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-number">{{ enrolledCount }}</span>
+      <span class="stat-label">Enrolled</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-number">{{ gpa }}</span>
+      <span class="stat-label">GPA</span>
+    </div>
+  </section>
+
+  <section class="widget-section">
+    <app-course-summary-widget></app-course-summary-widget>
+  </section>
+</div>

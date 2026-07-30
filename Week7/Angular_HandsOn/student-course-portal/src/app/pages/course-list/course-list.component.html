@@ -1,0 +1,47 @@
+<div class="course-list-container">
+  <h2>Available Courses</h2>
+
+  <div class="filter-bar">
+    <input
+      type="text"
+      class="search-box"
+      placeholder="Filter courses..."
+      [(ngModel)]="searchTerm"
+      (ngModelChange)="onSearchChange()"
+    />
+  </div>
+
+  <!-- Task 25: Loading indicator -->
+  <div *ngIf="isLoading" class="loading-state">
+    <p>Loading courses...</p>
+  </div>
+
+  <div *ngIf="errorMessage" class="error-state">
+    <p>{{ errorMessage }}</p>
+  </div>
+
+  <!-- Task 28: *ngIf with else ng-template #noCourses -->
+  <div *ngIf="!isLoading && !errorMessage">
+    <div *ngIf="filteredCourses.length > 0; else noCourses" class="course-grid">
+      <!-- Task 26: *ngFor with trackBy -->
+      <app-course-card
+        *ngFor="let c of filteredCourses; let i = index; trackBy: trackByCourseId"
+        [course]="c"
+        (enrollRequested)="onEnroll($event)"
+        (click)="onCardClick(c.id)"
+      ></app-course-card>
+    </div>
+  </div>
+
+  <!-- Task 28: ng-template #noCourses -->
+  <ng-template #noCourses>
+    <div class="empty-state">
+      <p>No courses available.</p>
+    </div>
+  </ng-template>
+
+  <!-- Task 24: Display selected course ID -->
+  <div *ngIf="selectedCourseId" class="selected-info">
+    <p>Selected course ID: {{ selectedCourseId }}</p>
+  </div>
+</div>
